@@ -2,12 +2,22 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/vendor.min.css" />
     <title>Sportify</title>
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="navbar navbar-inverse bg-dark" role="navigation">
+        <a class="navbar-brand" href="#">Sportify</a>
     </div>
+    <div class="row m-1 p-1">
+        <div id="categories" class="col-3">
+            Put something useful here later
+        </div>
+        <div class="col-9">
+            @RenderBody()
+        </div>
+    </div>
+    <script src="~/vendor.min.js"></script>
 </body>
 </html>
 
